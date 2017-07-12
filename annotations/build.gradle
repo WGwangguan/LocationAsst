@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.WGwangguan'
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+task sourcesJar(type : Jar) {
+    from sourceSets.main.allSource
+    classifier = 'source'
+}
+
+artifacts {
+    archives sourcesJar
+}
