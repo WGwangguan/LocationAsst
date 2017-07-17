@@ -65,7 +65,7 @@ allprojects {
 dependencies {
     compile 'com.github.WGwangguan.LocationAsst:annotatelocation:v1.0.0'
     compile 'com.github.WGwangguan.LocationAsst:annotations:v1.0.0'
-    compile 'com.github.WGwangguan.LocationAsst:processor:v1.0.0'
+    annotationProcessor 'com.github.WGwangguan.LocationAsst:processor:v1.0.0'
 }
 ```
 ### 配置AndroidManifest.xml
